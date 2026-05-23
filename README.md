@@ -43,6 +43,12 @@ You can install it as an unpacked browser extension.
 - The source code is plain and unobfuscated, so you can inspect it manually before installation.
 - It is currently distributed as an unpacked extension, not through the Chrome Web Store.
 
+## Privacy
+
+Unique Tracks Selector reads track information from music search/listing pages and stores seen-track data locally in your browser. The extension also includes basic PostHog analytics for popup usage events, only to notify me that somebody is using the extension. The analytics records only that certain popup actions happened, e.g. that popup was opened. It does not record e.g. who clicked them nor on which site.
+
+See [PRIVACY.md](PRIVACY.md) for details.
+
 ## License
 
 This project is source-available now, but not open-source.
