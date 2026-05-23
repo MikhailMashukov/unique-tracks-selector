@@ -24,9 +24,9 @@ With this extension, browsing feels less like digging through a messy pile of re
 
 You can install it as an unpacked browser extension.
 
-1. Download this repository:
-   - click `Code` -> `Download ZIP` on GitHub and extract it;
-   - or clone it with Git.
+1. Download and extract the packaged extension ZIP:  
+   [unique-tracks-selector.zip](https://github.com/MikhailMashukov/unique-tracks-selector/releases/download/v0.6/unique-tracks-selector.zip)  
+   Release notes: [Version 0.6](https://github.com/MikhailMashukov/unique-tracks-selector/releases/tag/v0.6)
 2. Open Chrome.
 3. Open the menu by clicking the three dots in the top-right corner and select `Extensions`. Alternatively, open `chrome://extensions` directly.
 4. Enable `Developer mode` in the top-right corner.
@@ -42,10 +42,6 @@ You can install it as an unpacked browser extension.
 - The extension is free.
 - The source code is plain and unobfuscated, so you can inspect it manually before installation.
 - It is currently distributed as an unpacked extension, not through the Chrome Web Store.
-
-## Status
-
-This is a practical tool I use myself. It is intentionally small and focused: mark unique tracks, detect variants, and reduce duplicate noise while browsing music sites.
 
 ## License
 
