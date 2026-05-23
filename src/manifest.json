@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Unique Tracks Selector",
+  "version": "0.6",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  "permissions": [
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Unique Tracks Selector",
+    "default_popup": "popup.html"
+  }
+}
+

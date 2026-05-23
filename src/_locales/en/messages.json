@@ -1,0 +1,178 @@
+{
+  "extName": {
+    "message": "Unique Tracks Selector",
+    "description": "Extension name shown in browser UI."
+  },
+  "extDescription": {
+    "message": "Highlights unique tracks while you browse music search pages. It marks previously seen tracks, remixes, and duplicates so you can quickly focus on new results.",
+    "description": "Extension description shown in browser UI."
+  },
+  "popupEnable": {
+    "message": "Enable",
+    "description": "Popup toggle label."
+  },
+  "popupDebug": {
+    "message": "Debug",
+    "description": "Popup debug toggle label."
+  },
+  "popupPrevious": {
+    "message": "Previous",
+    "description": "Label for tracks from previous pages."
+  },
+  "popupNew": {
+    "message": "new",
+    "description": "Counter label for new tracks."
+  },
+  "popupVariant": {
+    "message": "variant",
+    "description": "Counter label for variant/remix tracks."
+  },
+  "popupDuplicate": {
+    "message": "duplicate",
+    "description": "Counter label for duplicate tracks."
+  },
+  "popupDbTotal": {
+    "message": "DB: total",
+    "description": "Popup storage total counter label."
+  },
+  "popupDbScope": {
+    "message": "set",
+    "description": "Popup current folder storage counter label."
+  },
+  "popupPages": {
+    "message": "Pages",
+    "description": "Source selector pages header."
+  },
+  "scopeEdit": {
+    "message": "Edit folder",
+    "description": "Edit folder button title and accessible label."
+  },
+  "scopeValueTitle": {
+    "message": "Current folder: the group of tracks you are browsing now.\nDuplicates are checked against this tab and saved tracks in this folder.\nIf one artist is split across different folders on different sites, rename the folder",
+    "description": "Tooltip for the current folder value."
+  },
+  "scopeSave": {
+    "message": "Save folder",
+    "description": "Save folder button title and accessible label."
+  },
+  "scopeUseAuto": {
+    "message": "Reset to the automatically recognized folder",
+    "description": "Reset manual folder button title and accessible label."
+  },
+  "manualScopeTitle": {
+    "message": "Manual folder for this URL section",
+    "description": "Tooltip for manually overridden folder."
+  },
+  "enableTitle": {
+    "message": "Enable track highlighting on the current tab",
+    "description": "Tooltip for the enable toggle."
+  },
+  "debugTitle": {
+    "message": "Show diagnostic frames and print extra logs.\nUsually not needed",
+    "description": "Tooltip for the debug toggle."
+  },
+  "previousTitle": {
+    "message": "Records from other pages currently used to filter duplicates: including variants / unique tracks only",
+    "description": "Tooltip for the Previous counter."
+  },
+  "newTitle": {
+    "message": "Unique tracks on the current page",
+    "description": "Tooltip for the new counter."
+  },
+  "variantTitle": {
+    "message": "Other versions of already seen tracks: remix, extended, radio edit, and similar",
+    "description": "Tooltip for the variant counter."
+  },
+  "duplicateTitle": {
+    "message": "Exact or near-exact repeats of already seen tracks",
+    "description": "Tooltip for the duplicate counter."
+  },
+  "dbTotalTitle": {
+    "message": "Total saved tracks in the browser extension local storage",
+    "description": "Tooltip for the total DB counter."
+  },
+  "dbScopeTitle": {
+    "message": "Saved tracks in the browser extension local storage for the current folder",
+    "description": "Tooltip for the current folder DB counter."
+  },
+  "sourceSelectorTitle": {
+    "message": "Sites with tracks from the current folder.\nBlue is the current page.\nGreen pages participate in duplicate filtering.\nYou can select/unselect pages to participate",
+    "description": "Tooltip for the SourceSelector header."
+  },
+  "errorScopeEmpty": {
+    "message": "Scope cannot be empty.",
+    "description": "Error shown when a manual scope value is empty."
+  },
+  "errorHttpOnly": {
+    "message": "The extension works only on http(s) pages.",
+    "description": "Error shown for unsupported browser URLs."
+  },
+  "errorNoActiveTab": {
+    "message": "No active tab was found.",
+    "description": "Popup error when no active tab exists."
+  },
+  "errorNoTabUrl": {
+    "message": "This tab has no URL.",
+    "description": "Popup error when active tab has no URL."
+  },
+  "errorCouldNotLoadTabState": {
+    "message": "Could not load tab state.",
+    "description": "Popup error when tab state cannot be read."
+  },
+  "errorFailedRefreshClassification": {
+    "message": "Failed to refresh page classification.",
+    "description": "Popup error when reprocessing fails."
+  },
+  "errorFailedUpdateTabState": {
+    "message": "Failed to update tab state.",
+    "description": "Popup error when enable/disable fails."
+  },
+  "errorFailedUpdateDebug": {
+    "message": "Failed to update debug mode.",
+    "description": "Popup error when debug mode cannot be changed."
+  },
+  "errorScopeEditingUnavailable": {
+    "message": "Scope editing is not available.",
+    "description": "Popup error when manual scope editing API is unavailable."
+  },
+  "errorTabNotEnabled": {
+    "message": "This tab is not enabled.",
+    "description": "Error shown when an action requires an enabled tab."
+  },
+  "errorScriptingUnavailable": {
+    "message": "scripting API is not available.",
+    "description": "Error shown when script injection is unavailable."
+  },
+  "errorCouldNotReprocessPage": {
+    "message": "Could not reprocess page",
+    "description": "Error prefix shown when page reprocessing fails."
+  },
+  "errorCouldNotStartContentScript": {
+    "message": "Could not start content script",
+    "description": "Error prefix shown when content script injection fails."
+  },
+  "errorFailedProcessTracks": {
+    "message": "Failed to process tracks.",
+    "description": "Content error when background rejects track processing."
+  },
+  "errorNoTrackRows": {
+    "message": "No track rows detected. Enable Debug mode and check the page console for MusicBrowserExt logs.",
+    "description": "Content error when no tracks are detected."
+  },
+  "errorNoProcessingSummary": {
+    "message": "Track processing returned no summary.",
+    "description": "Content error when background returns no classification summary."
+  },
+  "errorScopeNotDetected": {
+    "message": "Scope is not detected on this page.",
+    "description": "Error shown when artist/search scope cannot be detected."
+  },
+  "actionTitleDefault": {
+    "message": "MusicBrowserExt",
+    "description": "Toolbar action title when extension is disabled."
+  },
+  "actionTitleEnabled": {
+    "message": "MusicBrowserExt enabled on this tab",
+    "description": "Toolbar action title when extension is enabled for a tab."
+  }
+}

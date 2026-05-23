@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MusicBrowserExt</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <div class="title" data-i18n="extName">Unique Tracks Selector</div>
+      <div class="scope-row">
+        <button id="scope-value" class="scope-value" type="button">-</button>
+        <input id="scope-input" class="scope-input" type="text" hidden />
+        <button id="scope-edit-button" class="scope-button scope-button--edit" type="button" title="Edit Scope" aria-label="Edit Scope" data-i18n-title="scopeEdit" data-i18n-aria-label="scopeEdit">✎</button>
+        <button id="scope-save-button" class="scope-button" type="button" title="Save Scope" aria-label="Save Scope" data-i18n-title="scopeSave" data-i18n-aria-label="scopeSave" hidden>✓</button>
+        <button id="scope-reset-button" class="scope-button" type="button" title="Use auto Scope" aria-label="Use auto Scope" data-i18n-title="scopeUseAuto" data-i18n-aria-label="scopeUseAuto" hidden>↺</button>
+      </div>
+      <div class="controls-line">
+        <label class="switch-toggle" title="Enable track highlighting on the current tab" data-i18n-title="enableTitle">
+          <span class="switch-label" data-i18n="popupEnable">Enable</span>
+          <input id="enable-toggle" type="checkbox" disabled />
+          <span class="switch-slider"></span>
+        </label>
+        <label class="switch-toggle" title="Show diagnostic frames and print extra logs. Usually not needed" data-i18n-title="debugTitle">
+          <span class="switch-label" data-i18n="popupDebug">Debug</span>
+          <input id="debug-toggle" type="checkbox" />
+          <span class="switch-slider"></span>
+        </label>
+      </div>
+      <div id="counts-container" hidden>
+        <div class="counts-line">
+          <span title="Records from other pages currently used to filter duplicates: including variants / unique tracks only" data-i18n-title="previousTitle"><span data-i18n="popupPrevious">Previous</span> <b id="previous-count">0</b> / <b id="previous-unique-count">0</b></span>
+          <span title="Unique tracks on the current page" data-i18n-title="newTitle"><span data-i18n="popupNew">new</span> <b id="new-count">0</b></span>
+          <span title="Other versions of already seen tracks: remix, extended, radio edit, and similar" data-i18n-title="variantTitle"><span data-i18n="popupVariant">variant</span> <b id="variant-count">0</b></span>
+          <span title="Exact or near-exact repeats of already seen tracks" data-i18n-title="duplicateTitle"><span data-i18n="popupDuplicate">duplicate</span> <b id="duplicate-count">0</b></span>
+        </div>
+        <div id="source-selector-container" class="source-selector-container" hidden></div>
+        <div class="counts-line counts-line--db">
+          <span title="Total saved tracks in the browser extension local storage" data-i18n-title="dbTotalTitle"><span data-i18n="popupDbTotal">DB: total</span> <b id="total-count">0</b></span>
+          <span title="Saved tracks in the browser extension local storage for the current folder" data-i18n-title="dbScopeTitle"><span data-i18n="popupDbScope">set</span> <b id="scope-count">0</b></span>
+        </div>
+      </div>
+      <p id="error-line" class="error-line" hidden></p>
+    </main>
+
+    <script src="shared.js"></script>
+    <script src="classification.js"></script>
+    <script src="storage.js"></script>
+    <script src="source_selector.js"></script>
+    <script src="analytics.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

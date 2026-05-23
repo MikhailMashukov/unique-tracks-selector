@@ -1,0 +1,178 @@
+{
+  "extName": {
+    "message": "Unique Tracks Selector",
+    "description": "Название расширения в интерфейсе браузера."
+  },
+  "extDescription": {
+    "message": "Подсвечивает уникальные треки при просмотре музыкальных страниц поиска: отмечает уже виденные треки, ремиксы и дубликаты, чтобы быстрее находить новые результаты.",
+    "description": "Описание расширения в интерфейсе браузера."
+  },
+  "popupEnable": {
+    "message": "Включить",
+    "description": "Подпись переключателя включения в popup."
+  },
+  "popupDebug": {
+    "message": "Отладка",
+    "description": "Подпись переключателя отладки в popup."
+  },
+  "popupPrevious": {
+    "message": "Прослуш.",
+    "description": "Метка треков с предыдущих страниц."
+  },
+  "popupNew": {
+    "message": "новые",
+    "description": "Метка счётчика новых треков."
+  },
+  "popupVariant": {
+    "message": "варианты",
+    "description": "Метка счётчика вариантов/ремиксов."
+  },
+  "popupDuplicate": {
+    "message": "дубли",
+    "description": "Метка счётчика дублей."
+  },
+  "popupDbTotal": {
+    "message": "БД: всего",
+    "description": "Метка общего счётчика хранилища в popup."
+  },
+  "popupDbScope": {
+    "message": "область",
+    "description": "Метка счётчика текущего scope в popup."
+  },
+  "popupPages": {
+    "message": "Стр.",
+    "description": "Заголовок страниц в блоке выбора источников."
+  },
+  "scopeEdit": {
+    "message": "Изменить область",
+    "description": "Title и accessible label кнопки редактирования scope."
+  },
+  "scopeValueTitle": {
+    "message": "Текущая область (подмножество треков) в которой вы находитесь. Дубликаты ищутся только среди треков текущей вкладки и треков из текущей области.\nЕсли треки одного артиста на разных сайтах попали в разные области, переименуйте её",
+    "description": "Подсказка для текущего значения scope."
+  },
+  "scopeSave": {
+    "message": "Сохранить Scope",
+    "description": "Title и accessible label кнопки сохранения scope."
+  },
+  "scopeUseAuto": {
+    "message": "Использовать auto Scope",
+    "description": "Title и accessible label кнопки сброса manual scope."
+  },
+  "manualScopeTitle": {
+    "message": "Manual Scope для этого раздела URL",
+    "description": "Tooltip для scope, заданного вручную."
+  },
+  "enableTitle": {
+    "message": "Включить пометку треков на текущей вкладке",
+    "description": "Подсказка для переключателя включения."
+  },
+  "debugTitle": {
+    "message": "Отображение диагностических рамок и печать дополнительных логов.\nОбычно не нужно",
+    "description": "Подсказка для переключателя отладки."
+  },
+  "previousTitle": {
+    "message": "Количество треков с других страниц, которые сейчас участвуют в фильтрации дубликатов: включая варианты / только уникальные",
+    "description": "Подсказка для счётчика Прослуш."
+  },
+  "newTitle": {
+    "message": "Уникальные треки на текущей странице",
+    "description": "Подсказка для счётчика новых треков."
+  },
+  "variantTitle": {
+    "message": "Другие версии уже встречавшихся треков: remix, extended, radio edit и похожее",
+    "description": "Подсказка для счётчика вариантов."
+  },
+  "duplicateTitle": {
+    "message": "Точные или почти точные повторы уже виденных треков",
+    "description": "Подсказка для счётчика дублей."
+  },
+  "dbTotalTitle": {
+    "message": "Общее количество сохранённых треков в локальном хранилище расширения в браузере",
+    "description": "Подсказка для общего счётчика БД."
+  },
+  "dbScopeTitle": {
+    "message": "Количество сохранённых треков в локальном хранилище для текущей области",
+    "description": "Подсказка для счётчика текущей области."
+  },
+  "sourceSelectorTitle": {
+    "message": "Все сайты, на которых были треки из текущей области.\nСиняя - текущая страница.\nЗелёные участвуют в фильтрации дубликатов\nМожно помечать/размечать участвующие страницы.",
+    "description": "Подсказка для заголовка блока выбора источников."
+  },
+  "errorScopeEmpty": {
+    "message": "Scope не может быть пустым.",
+    "description": "Ошибка при пустом manual scope."
+  },
+  "errorHttpOnly": {
+    "message": "Расширение работает только на http(s) страницах.",
+    "description": "Ошибка для неподдерживаемых URL браузера."
+  },
+  "errorNoActiveTab": {
+    "message": "Активная вкладка не найдена.",
+    "description": "Ошибка popup, если нет активной вкладки."
+  },
+  "errorNoTabUrl": {
+    "message": "У этой вкладки нет URL.",
+    "description": "Ошибка popup, если у активной вкладки нет URL."
+  },
+  "errorCouldNotLoadTabState": {
+    "message": "Не удалось загрузить состояние вкладки.",
+    "description": "Ошибка popup при чтении состояния вкладки."
+  },
+  "errorFailedRefreshClassification": {
+    "message": "Не удалось обновить классификацию страницы.",
+    "description": "Ошибка popup при повторной обработке страницы."
+  },
+  "errorFailedUpdateTabState": {
+    "message": "Не удалось обновить состояние вкладки.",
+    "description": "Ошибка popup при включении/выключении."
+  },
+  "errorFailedUpdateDebug": {
+    "message": "Не удалось обновить режим отладки.",
+    "description": "Ошибка popup при переключении отладки."
+  },
+  "errorScopeEditingUnavailable": {
+    "message": "Редактирование Scope недоступно.",
+    "description": "Ошибка popup, если API редактирования manual scope недоступен."
+  },
+  "errorTabNotEnabled": {
+    "message": "Расширение не включено для этой вкладки.",
+    "description": "Ошибка, если действие требует включённой вкладки."
+  },
+  "errorScriptingUnavailable": {
+    "message": "scripting API недоступен.",
+    "description": "Ошибка, если инъекция скриптов недоступна."
+  },
+  "errorCouldNotReprocessPage": {
+    "message": "Не удалось перепроцессить страницу",
+    "description": "Префикс ошибки при сбое повторной обработки страницы."
+  },
+  "errorCouldNotStartContentScript": {
+    "message": "Не удалось запустить content script",
+    "description": "Префикс ошибки при сбое инъекции content script."
+  },
+  "errorFailedProcessTracks": {
+    "message": "Не удалось обработать треки.",
+    "description": "Ошибка content при отказе background обработать треки."
+  },
+  "errorNoTrackRows": {
+    "message": "Строки треков не найдены. Включите отладку и проверьте консоль страницы на логи MusicBrowserExt.",
+    "description": "Ошибка content, если треки не найдены."
+  },
+  "errorNoProcessingSummary": {
+    "message": "Обработка треков не вернула сводку.",
+    "description": "Ошибка content, если background не вернул summary."
+  },
+  "errorScopeNotDetected": {
+    "message": "Scope не определён на этой странице.",
+    "description": "Ошибка, если не удалось определить исполнителя/поисковый scope."
+  },
+  "actionTitleDefault": {
+    "message": "MusicBrowserExt",
+    "description": "Title кнопки расширения, когда оно выключено."
+  },
+  "actionTitleEnabled": {
+    "message": "MusicBrowserExt включён для этой вкладки",
+    "description": "Title кнопки расширения, когда оно включено для вкладки."
+  }
+}
